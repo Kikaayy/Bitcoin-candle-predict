@@ -52,7 +52,7 @@ def prepare_features(df, lookback=10):
         # skip les données invalides
         is_valid=True
         for f in features:
-            if str(f)=='nan' or str(f)=='inf' or str(f)=='-inf':  # manual check
+            if str(f)=='nan' or str(f)=='inf' or str(f)=='-inf': 
                 is_valid=False
                 break
         if is_valid:
